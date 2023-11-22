@@ -129,12 +129,6 @@ view: events {
     sql: ${TABLE}.browser ;;
   }
 
-  dimension: os {
-    label: "Operating System"
-    view_label: "Visitors"
-    sql: ${TABLE}.os ;;
-  }
-
   measure: count {
     type: count
     drill_fields: [simple_page_info*]
@@ -181,6 +175,6 @@ view: events {
   }
 
   set: visitors {
-    fields: [ip, os, browser, user_id, count]
+    fields: [ip,browser, user_id, count]
   }
 }

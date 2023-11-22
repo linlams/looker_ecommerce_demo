@@ -49,7 +49,7 @@ view: data_tool {
           WHEN {% parameter timeframe_filter %} = 'Month' THEN ${event_month}
         END ;;
     label_from_parameter: timeframe_filter
-    drill_fields: [os, browser, event_type]
+    drill_fields: [ browser, event_type]
   }
 
   parameter: primary_metric_filter {
