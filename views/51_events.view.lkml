@@ -1,5 +1,5 @@
 view: events {
-  sql_table_name: ecomm.events ;;
+  sql_table_name: thelook_ecommerce.events ;;
 
   dimension: event_id {
     type: number
