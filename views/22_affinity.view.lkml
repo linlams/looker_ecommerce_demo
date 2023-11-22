@@ -129,7 +129,7 @@ view: user_order_product {
         oi.user_id AS user_id
         , p.id AS prod_id
         , oi.order_id AS order_id
-      FROM ecomm.order_items oi
+      FROM thelook_ecommerce.order_items oi
       LEFT JOIN thelook_ecommerce.inventory_items ii
         ON oi.inventory_item_id = ii.id
       LEFT JOIN thelook_ecommerce. products p
@@ -167,7 +167,7 @@ view: total_order_product {
     sql: SELECT
         p.id AS prod_id
         , COUNT(*) AS prod_freq
-      FROM ecomm.order_items oi
+      FROM thelook_ecommerce.order_items oi
       LEFT JOIN thelook_ecommerce.inventory_items
         ON oi.inventory_item_id = inventory_items.id
       LEFT JOIN thelook_ecommerce.products p
