@@ -108,7 +108,7 @@ view: users {
 
   dimension: zip {
     type: zipcode
-    sql: ${TABLE}.zip ;;
+    sql: ${TABLE}.postal_code ;;
   }
 
   dimension: uk_postcode {
